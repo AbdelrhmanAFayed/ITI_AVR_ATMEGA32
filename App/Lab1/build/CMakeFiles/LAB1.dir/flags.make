@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I"/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/inc" -I"/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/../../COTS/common/stdlib" -I"/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/inc" -I"/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/../../common/stdlib"
 
-C_FLAGS = 
+C_FLAGS = -Os -Wall -mmcu=atmega32 -DF_CPU=8000000UL
 

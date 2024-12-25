@@ -96,6 +96,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/LAB1.dir/DependInfo.cmake"
-  "CMakeFiles/avr-hex.dir/DependInfo.cmake"
+  "CMakeFiles/LAB1.hex.dir/DependInfo.cmake"
+  "CMakeFiles/upload.dir/DependInfo.cmake"
   "MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake"
   )

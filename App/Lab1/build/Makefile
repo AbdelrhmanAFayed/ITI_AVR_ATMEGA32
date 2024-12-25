@@ -130,17 +130,30 @@ LAB1/fast:
 .PHONY : LAB1/fast
 
 #=============================================================================
-# Target rules for targets named avr-hex
+# Target rules for targets named LAB1.hex
 
 # Build rule for target.
-avr-hex: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 avr-hex
-.PHONY : avr-hex
+LAB1.hex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LAB1.hex
+.PHONY : LAB1.hex
 
 # fast build rule for target.
-avr-hex/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/avr-hex.dir/build.make CMakeFiles/avr-hex.dir/build
-.PHONY : avr-hex/fast
+LAB1.hex/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB1.hex.dir/build.make CMakeFiles/LAB1.hex.dir/build
+.PHONY : LAB1.hex/fast
+
+#=============================================================================
+# Target rules for targets named upload
+
+# Build rule for target.
+upload: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upload
+.PHONY : upload
+
+# fast build rule for target.
+upload/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/build
+.PHONY : upload/fast
 
 #=============================================================================
 # Target rules for targets named MDIO
@@ -187,7 +200,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... avr-hex"
+	@echo "... LAB1.hex"
+	@echo "... upload"
 	@echo "... LAB1"
 	@echo "... MDIO"
 	@echo "... src/main.obj"
