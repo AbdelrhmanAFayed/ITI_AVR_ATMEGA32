@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+0264dd67667d2fb53f276492847fae8a CMakeFiles/avr-hex

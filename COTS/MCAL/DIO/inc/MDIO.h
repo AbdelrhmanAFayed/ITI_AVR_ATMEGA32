@@ -9,6 +9,8 @@
 #ifndef MDIO_H_
 #define MDIO_H_
 
+#include "STD_TYPES.h"
+
 /*Configuration*/
 
 #define MAX_NUM_PIN 7
