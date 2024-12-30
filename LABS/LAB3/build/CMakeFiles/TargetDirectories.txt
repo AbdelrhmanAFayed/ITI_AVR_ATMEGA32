@@ -1,0 +1,8 @@
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/CMakeFiles/LAB3.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/CMakeFiles/LAB3.hex.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/CMakeFiles/upload.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/CMakeFiles/rebuild_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/MDIO/CMakeFiles/MDIO.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/MDIO/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB3/build/MDIO/CMakeFiles/rebuild_cache.dir

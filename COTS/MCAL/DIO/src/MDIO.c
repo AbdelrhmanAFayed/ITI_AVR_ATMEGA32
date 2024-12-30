@@ -40,7 +40,7 @@
 	for(Loc_enu_pin_inc = MDIO_enuPIN0; Loc_enu_pin_inc < (MAX_NUM_PIN * MAX_NUM_PORT); Loc_enu_pin_inc++ )
 	{
 		Loc_enu_pin_current = Loc_enu_pin_inc % MAX_NUM_PIN ;
-		Loc_enu_port_current = Loc_enu_pin_inc % MAX_NUM_PORT ;
+		Loc_enu_port_current = Loc_enu_pin_inc / MAX_NUM_PIN ;
 		Loc_enu_error = MDIO_enuSetPinConfigration(Loc_enu_port_current,Loc_enu_pin_current,PinsStatusArray[Loc_enu_pin_inc]);
 
 		if(Loc_enu_error ==  MDIO_INVALID_PARAM)

@@ -7,9 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/CMakeLists.txt"
   "../CMakeLists.txt"
-  "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -74,10 +73,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake"
-  "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
-  "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
-  "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
-  "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
   )
 
 # The corresponding makefile is:
@@ -88,13 +83,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MDIO/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/MDIO.dir/DependInfo.cmake"
+  "CMakeFiles/LAB3.dir/DependInfo.cmake"
+  "CMakeFiles/LAB3.hex.dir/DependInfo.cmake"
+  "CMakeFiles/upload.dir/DependInfo.cmake"
+  "MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake"
   )

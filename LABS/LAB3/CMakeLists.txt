@@ -3,7 +3,18 @@
 cmake_minimum_required(VERSION 3.2)
 set(CMAKE_SYSTEM_NAME generic)
 
-project(LAB1 C)
+# Automatically remove the build directory
+if (CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
+    message(FATAL_ERROR "In-source builds are not allowed. Please use a separate build directory.")
+endif()
+
+# Custom command to remove the previous build directory
+if (EXISTS ${CMAKE_BINARY_DIR})
+    file(REMOVE_RECURSE ${CMAKE_BINARY_DIR})
+    message(STATUS "Previous build folder removed: ${CMAKE_BINARY_DIR}")
+endif()
+
+project(LAB3 C)
 
 set(MCU atmega32)
 set(F_CPU 8000000UL)  

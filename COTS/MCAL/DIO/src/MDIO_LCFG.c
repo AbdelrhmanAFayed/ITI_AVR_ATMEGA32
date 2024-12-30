@@ -6,9 +6,9 @@ const MDIO_enuPIN_Configration_t PinsStatusArray[MAX_NUM_PIN * MAX_NUM_PORT]=
     MDIO_enuPIN_OUTPUT ,            /* PORTA PIN0 */      
     MDIO_enuPIN_OUTPUT ,            /* PORTA PIN1 */  
     MDIO_enuPIN_OUTPUT ,            /* PORTA PIN2 */
-    MDIO_enuPIN_OUTPUT ,            /* PORTA PIN3 */
-    MDIO_enuPIN_OUTPUT ,            /* PORTA PIN4 */
-    MDIO_enuPIN_OUTPUT ,            /* PORTA PIN5 */
+    MDIO_enuPIN_INPUT_PULLUP,       /* PORTA PIN3 */
+    MDIO_enuPIN_INPUT_PULLUP,       /* PORTA PIN4 */
+    MDIO_enuPIN_INPUT_PULLUP,       /* PORTA PIN5 */
     MDIO_enuPIN_OUTPUT ,            /* PORTA PIN6 */
     MDIO_enuPIN_OUTPUT ,            /* PORTA PIN7 */
  

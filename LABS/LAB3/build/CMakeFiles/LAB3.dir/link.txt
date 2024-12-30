@@ -1,0 +1,1 @@
+avr-gcc -Os -Wall -mmcu=atmega32 -DF_CPU=8000000UL -mmcu=atmega32 CMakeFiles/LAB3.dir/src/main.c.obj -o LAB3  MDIO/libMDIO.a 
