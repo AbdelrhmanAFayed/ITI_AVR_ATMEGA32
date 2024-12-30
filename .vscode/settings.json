@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "mdio.h": "c"
+        "mdio.h": "c",
+        "mport.h": "c"
     }
 }
