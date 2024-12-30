@@ -31,6 +31,26 @@
 
  
 
+ void MDIO_vInit(void)
+ {
+	MDIO_enuErrorStatus_t   Loc_enu_error ;
+	MDIO_enuPinNum_t  		Loc_enu_pin_inc ;
+	MDIO_enuPinNum_t 	    Loc_enu_pin_current ;
+	MDIO_enuPortNum_t 		Loc_enu_port_current ;
+	for(Loc_enu_pin_inc = MDIO_enuPIN0; Loc_enu_pin_inc < (MAX_NUM_PIN * MAX_NUM_PORT); Loc_enu_pin_inc++ )
+	{
+		Loc_enu_pin_current = Loc_enu_pin_inc % MAX_NUM_PIN ;
+		Loc_enu_port_current = Loc_enu_pin_inc % MAX_NUM_PORT ;
+		Loc_enu_error = MDIO_enuSetPinConfigration(Loc_enu_port_current,Loc_enu_pin_current,PinsStatusArray[Loc_enu_pin_inc]);
+
+		if(Loc_enu_error ==  MDIO_INVALID_PARAM)
+		{
+			break ;
+		}
+	}
+
+ }
+
 /*MDIO_enuSetPinConfigration function is used to configure PINs */
 /*It takes the used port and pin and the intended configuration (OUTPUT,INPUT_PULLUP,INPUT_PULLDOWN)*/
 

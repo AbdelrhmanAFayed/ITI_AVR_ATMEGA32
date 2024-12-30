@@ -13,8 +13,8 @@
 
 /*Configuration*/
 
-#define MAX_NUM_PIN 7
-#define MAX_NUM_PORT 3 
+#define MAX_NUM_PIN 8
+#define MAX_NUM_PORT 4 
 
 
 
@@ -81,8 +81,12 @@ typedef enum
 	MDIO_enuPORT_HIGH = 0xFFU
 } MDIO_enuPORT_State_t ;
 
+const MDIO_enuPIN_Configration_t PinsStatusArray[MAX_NUM_PIN * MAX_NUM_PORT] ;
 
 /*Function Prototypes*/
+
+void MDIO_vInit(void);
+
 MDIO_enuErrorStatus_t MDIO_enuSetPinConfigration(MDIO_enuPortNum_t Copy_enuPortNum,MDIO_enuPinNum_t Copy_enuPinNum,MDIO_enuPIN_Configration_t Copy_enuConfigration);
 
 
