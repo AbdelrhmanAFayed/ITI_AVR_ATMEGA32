@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1"
+CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build"
+CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -66,10 +66,12 @@ CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/
 all: CMakeFiles/LAB1.dir/all
 all: CMakeFiles/LAB1.hex.dir/all
 all: MDIO/all
+all: MPORT/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: MDIO/preinstall
+preinstall: MPORT/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -77,6 +79,7 @@ clean: CMakeFiles/LAB1.dir/clean
 clean: CMakeFiles/LAB1.hex.dir/clean
 clean: CMakeFiles/upload.dir/clean
 clean: MDIO/clean
+clean: MPORT/clean
 .PHONY : clean
 
 #=============================================================================
@@ -95,20 +98,36 @@ MDIO/clean: MDIO/CMakeFiles/MDIO.dir/clean
 .PHONY : MDIO/clean
 
 #=============================================================================
+# Directory level rules for directory MPORT
+
+# Recursive "all" directory target.
+MPORT/all: MPORT/CMakeFiles/MPORT.dir/all
+.PHONY : MPORT/all
+
+# Recursive "preinstall" directory target.
+MPORT/preinstall:
+.PHONY : MPORT/preinstall
+
+# Recursive "clean" directory target.
+MPORT/clean: MPORT/CMakeFiles/MPORT.dir/clean
+.PHONY : MPORT/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/LAB1.dir
 
 # All Build rule for target.
 CMakeFiles/LAB1.dir/all: MDIO/CMakeFiles/MDIO.dir/all
+CMakeFiles/LAB1.dir/all: MPORT/CMakeFiles/MPORT.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB1.dir/build.make CMakeFiles/LAB1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB1.dir/build.make CMakeFiles/LAB1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num=1,2 "Built target LAB1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num=1,2 "Built target LAB1"
 .PHONY : CMakeFiles/LAB1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LAB1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LAB1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
 .PHONY : CMakeFiles/LAB1.dir/rule
 
 # Convenience name for target.
@@ -127,14 +146,14 @@ CMakeFiles/LAB1.dir/clean:
 CMakeFiles/LAB1.hex.dir/all: CMakeFiles/LAB1.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB1.hex.dir/build.make CMakeFiles/LAB1.hex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB1.hex.dir/build.make CMakeFiles/LAB1.hex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num= "Built target LAB1.hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num= "Built target LAB1.hex"
 .PHONY : CMakeFiles/LAB1.hex.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LAB1.hex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LAB1.hex.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
 .PHONY : CMakeFiles/LAB1.hex.dir/rule
 
 # Convenience name for target.
@@ -153,14 +172,14 @@ CMakeFiles/LAB1.hex.dir/clean:
 CMakeFiles/upload.dir/all: CMakeFiles/LAB1.hex.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num= "Built target upload"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num= "Built target upload"
 .PHONY : CMakeFiles/upload.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/upload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/upload.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
 .PHONY : CMakeFiles/upload.dir/rule
 
 # Convenience name for target.
@@ -179,14 +198,14 @@ CMakeFiles/upload.dir/clean:
 MDIO/CMakeFiles/MDIO.dir/all:
 	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/depend
 	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num=3,4,5 "Built target MDIO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num=3,4,5 "Built target MDIO"
 .PHONY : MDIO/CMakeFiles/MDIO.dir/all
 
 # Build rule for subdir invocation for target.
 MDIO/CMakeFiles/MDIO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/CMakeFiles/MDIO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
 .PHONY : MDIO/CMakeFiles/MDIO.dir/rule
 
 # Convenience name for target.
@@ -197,6 +216,32 @@ MDIO: MDIO/CMakeFiles/MDIO.dir/rule
 MDIO/CMakeFiles/MDIO.dir/clean:
 	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/clean
 .PHONY : MDIO/CMakeFiles/MDIO.dir/clean
+
+#=============================================================================
+# Target rules for target MPORT/CMakeFiles/MPORT.dir
+
+# All Build rule for target.
+MPORT/CMakeFiles/MPORT.dir/all:
+	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/depend
+	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num=6,7,8 "Built target MPORT"
+.PHONY : MPORT/CMakeFiles/MPORT.dir/all
+
+# Build rule for subdir invocation for target.
+MPORT/CMakeFiles/MPORT.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MPORT/CMakeFiles/MPORT.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
+.PHONY : MPORT/CMakeFiles/MPORT.dir/rule
+
+# Convenience name for target.
+MPORT: MPORT/CMakeFiles/MPORT.dir/rule
+.PHONY : MPORT
+
+# clean rule for target.
+MPORT/CMakeFiles/MPORT.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/clean
+.PHONY : MPORT/CMakeFiles/MPORT.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

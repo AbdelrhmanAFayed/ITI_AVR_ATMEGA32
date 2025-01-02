@@ -30,6 +30,8 @@ message(STATUS "${CMAKE_C_COMPILER}")
 message(STATUS "${${PROJECT_NAME}_SOURCES}")
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/MCAL/DIO/ ${CMAKE_BINARY_DIR}/MDIO) 
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/MCAL/PORT/ ${CMAKE_BINARY_DIR}/MPORT) 
+
 
 set(CMAKE_C_COMPILER avr-gcc)
 set(CMAKE_C_FLAGS "-Os -Wall -mmcu=${MCU} -DF_CPU=${F_CPU}")
@@ -40,6 +42,8 @@ add_executable(${PROJECT_NAME} "${${PROJECT_NAME}_SOURCES}")
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/inc"  "${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/common/stdlib"  )
 
 target_link_libraries(${PROJECT_NAME} MDIO)
+target_link_libraries(${PROJECT_NAME} MPORT)
+
 
 add_custom_target(${PROJECT_NAME}.hex ALL
     COMMAND avr-objcopy -O ihex -R .eeprom ${PROJECT_NAME} ${PROJECT_NAME}.hex

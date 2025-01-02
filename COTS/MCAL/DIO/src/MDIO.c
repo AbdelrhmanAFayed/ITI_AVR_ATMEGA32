@@ -31,7 +31,7 @@
 
  
 
- void MDIO_vInit(void)
+ /*void MDIO_vInit(void)
  {
 	MDIO_enuErrorStatus_t   Loc_enu_error ;
 	MDIO_enuPinNum_t  		Loc_enu_pin_inc ;
@@ -49,7 +49,7 @@
 		}
 	}
 
- }
+ }*/
 
 /*MDIO_enuSetPinConfigration function is used to configure PINs */
 /*It takes the used port and pin and the intended configuration (OUTPUT,INPUT_PULLUP,INPUT_PULLDOWN)*/

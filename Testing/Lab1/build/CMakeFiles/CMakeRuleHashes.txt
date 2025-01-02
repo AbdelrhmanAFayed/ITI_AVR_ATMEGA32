@@ -1,3 +1,3 @@
 # Hashes of file build rules.
-d6b1d3142ae7319befe2b28e10bd5e69 CMakeFiles/LAB1.hex
-13ee2f8938cd8c8cf421cb18d0cec8f7 CMakeFiles/upload
+29b112fd5c56d6b74eb66fe7de87e37b CMakeFiles/LAB1.hex
+b370aef6660bfc864da4d1ed8e9757cc CMakeFiles/upload

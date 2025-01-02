@@ -7,10 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "../CMakeLists.txt"
-  "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/CMakeLists.txt"
+  "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/PORT/CMakeLists.txt"
+  "../CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -34,7 +33,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -86,11 +84,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "MDIO/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MPORT/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -99,4 +95,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/LAB1.hex.dir/DependInfo.cmake"
   "CMakeFiles/upload.dir/DependInfo.cmake"
   "MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake"
+  "MPORT/CMakeFiles/MPORT.dir/DependInfo.cmake"
   )

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1"
+CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build"
+CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build"
 
 # Include any dependencies generated for this target.
 include MDIO/CMakeFiles/MDIO.dir/depend.make
@@ -72,30 +72,30 @@ include MDIO/CMakeFiles/MDIO.dir/flags.make
 MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj: MDIO/CMakeFiles/MDIO.dir/flags.make
 MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj: /media/fazloka/Abdelrhman/9\ Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c
 MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj: MDIO/CMakeFiles/MDIO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj -MF CMakeFiles/MDIO.dir/src/MDIO.c.obj.d -o CMakeFiles/MDIO.dir/src/MDIO.c.obj -c "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj"
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj -MF CMakeFiles/MDIO.dir/src/MDIO.c.obj.d -o CMakeFiles/MDIO.dir/src/MDIO.c.obj -c "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c"
 
 MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MDIO.dir/src/MDIO.c.i"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c" > CMakeFiles/MDIO.dir/src/MDIO.c.i
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c" > CMakeFiles/MDIO.dir/src/MDIO.c.i
 
 MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MDIO.dir/src/MDIO.c.s"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c" -o CMakeFiles/MDIO.dir/src/MDIO.c.s
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO.c" -o CMakeFiles/MDIO.dir/src/MDIO.c.s
 
 MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj: MDIO/CMakeFiles/MDIO.dir/flags.make
 MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj: /media/fazloka/Abdelrhman/9\ Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c
 MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj: MDIO/CMakeFiles/MDIO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj -MF CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj.d -o CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj -c "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj"
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj -MF CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj.d -o CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj -c "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c"
 
 MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c" > CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c" > CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i
 
 MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c" -o CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/src/MDIO_LCFG.c" -o CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s
 
 # Object files for target MDIO
 MDIO_OBJECTS = \
@@ -109,19 +109,19 @@ MDIO/libMDIO.a: MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj
 MDIO/libMDIO.a: MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj
 MDIO/libMDIO.a: MDIO/CMakeFiles/MDIO.dir/build.make
 MDIO/libMDIO.a: MDIO/CMakeFiles/MDIO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libMDIO.a"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && $(CMAKE_COMMAND) -P CMakeFiles/MDIO.dir/cmake_clean_target.cmake
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MDIO.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libMDIO.a"
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && $(CMAKE_COMMAND) -P CMakeFiles/MDIO.dir/cmake_clean_target.cmake
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MDIO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 MDIO/CMakeFiles/MDIO.dir/build: MDIO/libMDIO.a
 .PHONY : MDIO/CMakeFiles/MDIO.dir/build
 
 MDIO/CMakeFiles/MDIO.dir/clean:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" && $(CMAKE_COMMAND) -P CMakeFiles/MDIO.dir/cmake_clean.cmake
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" && $(CMAKE_COMMAND) -P CMakeFiles/MDIO.dir/cmake_clean.cmake
 .PHONY : MDIO/CMakeFiles/MDIO.dir/clean
 
 MDIO/CMakeFiles/MDIO.dir/depend:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO/CMakeFiles/MDIO.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : MDIO/CMakeFiles/MDIO.dir/depend
 

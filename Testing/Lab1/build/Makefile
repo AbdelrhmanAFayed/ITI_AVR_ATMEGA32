@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1"
+CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build"
+CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -168,6 +168,19 @@ MDIO/fast:
 	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
 .PHONY : MDIO/fast
 
+#=============================================================================
+# Target rules for targets named MPORT
+
+# Build rule for target.
+MPORT: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MPORT
+.PHONY : MPORT
+
+# fast build rule for target.
+MPORT/fast:
+	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
+.PHONY : MPORT/fast
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -204,6 +217,7 @@ help:
 	@echo "... upload"
 	@echo "... LAB1"
 	@echo "... MDIO"
+	@echo "... MPORT"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

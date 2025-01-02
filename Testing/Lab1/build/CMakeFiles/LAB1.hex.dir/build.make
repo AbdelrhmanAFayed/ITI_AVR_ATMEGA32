@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1"
+CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build"
+CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build"
 
 # Utility rule file for LAB1.hex.
 
@@ -82,6 +82,6 @@ CMakeFiles/LAB1.hex.dir/clean:
 .PHONY : CMakeFiles/LAB1.hex.dir/clean
 
 CMakeFiles/LAB1.hex.dir/depend:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles/LAB1.hex.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles/LAB1.hex.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/LAB1.hex.dir/depend
 

@@ -1,6 +1,6 @@
 
 #include "MDIO.h"
-
+   
 const MDIO_enuPIN_Configration_t PinsStatusArray[MAX_NUM_PIN * MAX_NUM_PORT]=
 {
     MDIO_enuPIN_OUTPUT ,            /* PORTA PIN0 */      

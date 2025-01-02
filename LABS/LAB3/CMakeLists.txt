@@ -37,6 +37,7 @@ set(CMAKE_C_FLAGS "-Os -Wall -mmcu=${MCU} -DF_CPU=${F_CPU}")
 
 add_executable(${PROJECT_NAME} "${${PROJECT_NAME}_SOURCES}")
 
+
 target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/inc"  "${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/common/stdlib"  )
 
 target_link_libraries(${PROJECT_NAME} MDIO)

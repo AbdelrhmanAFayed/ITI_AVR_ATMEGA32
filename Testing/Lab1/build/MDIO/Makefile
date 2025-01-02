@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1"
+CMAKE_SOURCE_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build"
+CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/MDIO//CMakeFiles/progress.marks"
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build/CMakeFiles" 0
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/MDIO//CMakeFiles/progress.marks"
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/clean
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/preinstall
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/preinstall
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 MDIO/CMakeFiles/MDIO.dir/rule:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/CMakeFiles/MDIO.dir/rule
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/CMakeFiles/MDIO.dir/rule
 .PHONY : MDIO/CMakeFiles/MDIO.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ MDIO: MDIO/CMakeFiles/MDIO.dir/rule
 
 # fast build rule for target.
 MDIO/fast:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
 .PHONY : MDIO/fast
 
 src/MDIO.obj: src/MDIO.c.obj
@@ -135,7 +135,7 @@ src/MDIO.obj: src/MDIO.c.obj
 
 # target to build an object file
 src/MDIO.c.obj:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.obj
 .PHONY : src/MDIO.c.obj
 
 src/MDIO.i: src/MDIO.c.i
@@ -143,7 +143,7 @@ src/MDIO.i: src/MDIO.c.i
 
 # target to preprocess a source file
 src/MDIO.c.i:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.i
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.i
 .PHONY : src/MDIO.c.i
 
 src/MDIO.s: src/MDIO.c.s
@@ -151,7 +151,7 @@ src/MDIO.s: src/MDIO.c.s
 
 # target to generate assembly for a file
 src/MDIO.c.s:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.s
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO.c.s
 .PHONY : src/MDIO.c.s
 
 src/MDIO_LCFG.obj: src/MDIO_LCFG.c.obj
@@ -159,7 +159,7 @@ src/MDIO_LCFG.obj: src/MDIO_LCFG.c.obj
 
 # target to build an object file
 src/MDIO_LCFG.c.obj:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.obj
 .PHONY : src/MDIO_LCFG.c.obj
 
 src/MDIO_LCFG.i: src/MDIO_LCFG.c.i
@@ -167,7 +167,7 @@ src/MDIO_LCFG.i: src/MDIO_LCFG.c.i
 
 # target to preprocess a source file
 src/MDIO_LCFG.c.i:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.i
 .PHONY : src/MDIO_LCFG.c.i
 
 src/MDIO_LCFG.s: src/MDIO_LCFG.c.s
@@ -175,7 +175,7 @@ src/MDIO_LCFG.s: src/MDIO_LCFG.c.s
 
 # target to generate assembly for a file
 src/MDIO_LCFG.c.s:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/src/MDIO_LCFG.c.s
 .PHONY : src/MDIO_LCFG.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/App/Lab1/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/Testing/Lab1/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

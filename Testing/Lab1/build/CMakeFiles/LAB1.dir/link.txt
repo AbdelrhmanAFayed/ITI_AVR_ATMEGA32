@@ -1,1 +1,1 @@
-avr-gcc -Os -Wall -mmcu=atmega32 -DF_CPU=8000000UL -mmcu=atmega32 CMakeFiles/LAB1.dir/src/main.c.obj -o LAB1  MDIO/libMDIO.a 
+avr-gcc -Os -Wall -mmcu=atmega32 -DF_CPU=8000000UL -mmcu=atmega32 CMakeFiles/LAB1.dir/src/main.c.obj -o LAB1  MDIO/libMDIO.a MPORT/libMPORT.a 
