@@ -166,7 +166,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 		break;
 
 		case PORT_B:
-		if (GET_LOW_NIB(Copy_enuPinNum) == MPORT_OUTPUT) {
+		if (Copy_enuPinDirection == MPORT_OUTPUT) {
 			/*If the pin is config as output we set the relevant bit in DDR and clear the relevant bit in PORT*/
 			SET_BIT(DDRB, GET_LOW_NIB(Copy_enuPinNum));
 			CLR_BIT(PORTB, GET_LOW_NIB(Copy_enuPinNum));
@@ -181,7 +181,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 		break;
 
 		case PORT_C:
-		if (GET_LOW_NIB(Copy_enuPinNum) == MPORT_OUTPUT) {
+		if (Copy_enuPinDirection == MPORT_OUTPUT) {
 			/*If the pin is config as output we set the relevant bit in DDR and clear the relevant bit in PORT*/
 			SET_BIT(DDRC, GET_LOW_NIB(Copy_enuPinNum));
 			CLR_BIT(PORTC, GET_LOW_NIB(Copy_enuPinNum));
@@ -196,7 +196,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 		break;
 
 		case PORT_D:
-		if (GET_LOW_NIB(Copy_enuPinNum) == MPORT_OUTPUT) {
+		if (Copy_enuPinDirection == MPORT_OUTPUT) {
 			/*If the pin is config as output we set the relevant bit in DDR and clear the relevant bit in PORT*/
 			SET_BIT(DDRD, GET_LOW_NIB(Copy_enuPinNum));
 			CLR_BIT(PORTD, GET_LOW_NIB(Copy_enuPinNum));

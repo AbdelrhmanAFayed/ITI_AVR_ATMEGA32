@@ -3,12 +3,12 @@
 
 const MPORT_enuPinMode_t PinsStatusArray[MAX_NUM_PIN * MAX_NUM_PORT]=
 {
-    MPORT_enuPIN_OUTPUT ,            /* PORTA PIN0 */      
-    MPORT_enuPIN_OUTPUT ,            /* PORTA PIN1 */  
-    MPORT_enuPIN_OUTPUT ,            /* PORTA PIN2 */
-    MPORT_enuPIN_INPUT_PULLUP,       /* PORTA PIN3 */
-    MPORT_enuPIN_INPUT_PULLUP,       /* PORTA PIN4 */
-    MPORT_enuPIN_INPUT_PULLUP,       /* PORTA PIN5 */
+    MPORT_enuPIN_INPUT_PULLUP,       /* PORTA PIN0 */      
+    MPORT_enuPIN_INPUT_PULLUP,       /* PORTA PIN1 */  
+    MPORT_enuPIN_INPUT_PULLUP,       /* PORTA PIN2 */
+    MPORT_enuPIN_OUTPUT ,            /* PORTA PIN3 */
+    MPORT_enuPIN_OUTPUT ,            /* PORTA PIN4 */
+    MPORT_enuPIN_OUTPUT ,            /* PORTA PIN5 */
     MPORT_enuPIN_OUTPUT ,            /* PORTA PIN6 */
     MPORT_enuPIN_OUTPUT ,            /* PORTA PIN7 */
  

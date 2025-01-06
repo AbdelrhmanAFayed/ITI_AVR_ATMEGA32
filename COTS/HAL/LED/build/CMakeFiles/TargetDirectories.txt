@@ -1,0 +1,3 @@
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/HAL/LED/build/CMakeFiles/LED.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/HAL/LED/build/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/HAL/LED/build/CMakeFiles/rebuild_cache.dir
