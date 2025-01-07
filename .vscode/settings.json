@@ -2,6 +2,7 @@
     "files.associations": {
         "mdio.h": "c",
         "mport.h": "c",
-        "hled.h": "c"
+        "hled.h": "c",
+        "delay.h": "c"
     }
 }

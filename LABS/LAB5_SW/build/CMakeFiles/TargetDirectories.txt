@@ -1,0 +1,17 @@
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles/LAB5_SW.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles/LAB5_SW.hex.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles/upload.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles/rebuild_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MDIO/CMakeFiles/MDIO.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MDIO/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MDIO/CMakeFiles/rebuild_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MPORT/CMakeFiles/MPORT.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MPORT/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MPORT/CMakeFiles/rebuild_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HLED/CMakeFiles/HLED.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HLED/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HLED/CMakeFiles/rebuild_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HSW/CMakeFiles/HSW.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HSW/CMakeFiles/edit_cache.dir
+/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HSW/CMakeFiles/rebuild_cache.dir

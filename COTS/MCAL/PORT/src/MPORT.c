@@ -139,6 +139,7 @@ void MPORT_vInit(void)
 
 MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_enuPinDirection  )
 {
+	
     MPORT_enuErrorStatus_t   Loc_enu_error = MPORT_OK ;
 
     if (Copy_enuPinNum > PIN_D7) {
@@ -164,7 +165,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 			Loc_enu_error =  MPORT_INVALID_PARAM;
 			}
 		break;
-
+	
 		case PORT_B:
 		if (Copy_enuPinDirection == MPORT_OUTPUT) {
 			/*If the pin is config as output we set the relevant bit in DDR and clear the relevant bit in PORT*/
@@ -179,7 +180,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 			Loc_enu_error =  MPORT_INVALID_PARAM;
 			}
 		break;
-
+	
 		case PORT_C:
 		if (Copy_enuPinDirection == MPORT_OUTPUT) {
 			/*If the pin is config as output we set the relevant bit in DDR and clear the relevant bit in PORT*/
@@ -194,7 +195,7 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 			Loc_enu_error =  MPORT_INVALID_PARAM;
 			}
 		break;
-
+	
 		case PORT_D:
 		if (Copy_enuPinDirection == MPORT_OUTPUT) {
 			/*If the pin is config as output we set the relevant bit in DDR and clear the relevant bit in PORT*/
@@ -209,11 +210,11 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_
 			Loc_enu_error =  MPORT_INVALID_PARAM;
 			}
 		break;
-
+	
 		default:
 		/*If the port is config in a not defined we return error status*/
 		Loc_enu_error =  MPORT_INVALID_PARAM;
-	}
+	 }
         
     }
 
@@ -338,3 +339,4 @@ MPORT_enuErrorStatus_t MPORT_enuSetPinMode( u8 Copy_enuPinNum  ,  MPORT_enuPinMo
 	return Loc_enu_error;
 
 }
+

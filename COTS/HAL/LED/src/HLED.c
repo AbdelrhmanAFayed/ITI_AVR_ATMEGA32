@@ -72,13 +72,10 @@ void HLED_init(void)
 
     for(Local_u8Counter = 0; Local_u8Counter < NUM_OF_LEDS; Local_u8Counter++)
     {
-        Local_u8PortPinNum = ((HLED_strucLEDcfg[Local_u8Counter].PortNum * 0x10) | HLED_strucLEDcfg[Local_u8Counter].PinNum);
+        Local_u8PortPinNum = ((HLED_strucLEDcfg[Local_u8Counter].PortNum * 0x10) + HLED_strucLEDcfg[Local_u8Counter].PinNum);
 
         MPORT_enuSetPinDirection(Local_u8PortPinNum, MPORT_OUTPUT);
-        
-       
-        
-
+    
         HLED_enuSetLedState(Local_u8Counter, HLED_strucLEDcfg[Local_u8Counter].Initial_State);
 
     }

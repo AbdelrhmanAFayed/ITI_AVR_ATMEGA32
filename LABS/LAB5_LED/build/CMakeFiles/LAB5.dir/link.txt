@@ -1,0 +1,1 @@
+avr-gcc -Os -Wall -mmcu=atmega32 -DF_CPU=8000000UL -mmcu=atmega32 CMakeFiles/LAB5.dir/src/main.c.obj -o LAB5  HLED/libHLED.a HSW/libHSW.a MDIO/libMDIO.a MPORT/libMPORT.a 

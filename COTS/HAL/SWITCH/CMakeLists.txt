@@ -13,7 +13,7 @@ if (EXISTS ${CMAKE_BINARY_DIR})
     message(STATUS "Previous build folder removed: ${CMAKE_BINARY_DIR}")
 endif()
 
-project(SWITCH C)
+project(HSW C)
 
 set(CMAKE_C_COMPILER avr-gcc)
 
@@ -21,13 +21,19 @@ file(GLOB_RECURSE ${PROJECT_NAME}_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c" 
 
 message(STATUS "${CMAKE_C_COMPILER}")
 message(STATUS "${${PROJECT_NAME}_SOURCES}")
-
 add_library(${PROJECT_NAME} STATIC "${${PROJECT_NAME}_SOURCES}")
 
-target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/inc"  "${CMAKE_CURRENT_SOURCE_DIR}/../../common/stdlib" )
+target_link_libraries(${PROJECT_NAME} MDIO)
+target_link_libraries(${PROJECT_NAME} MPORT)
 
-target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/inc"  "${CMAKE_CURRENT_SOURCE_DIR}/../../MCAL/DIO" )
+target_include_directories(${PROJECT_NAME} PUBLIC 
+    "${CMAKE_CURRENT_SOURCE_DIR}/inc"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../common/stdlib"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../MCAL/DIO/inc"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../MCAL/PORT/inc"
+)
 
-target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/inc"  "${CMAKE_CURRENT_SOURCE_DIR}/../../MCAL/PORT" )
+
+
 
 
