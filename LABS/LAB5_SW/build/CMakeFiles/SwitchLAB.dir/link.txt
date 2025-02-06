@@ -1,0 +1,1 @@
+/usr/bin/avr-gcc -mmcu=atmega32 -Wl,--gc-sections CMakeFiles/SwitchLAB.dir/src/main.c.o -o SwitchLAB  HAL/libHAL.a MCAL/libMCAL.a HAL/libHAL.a MCAL/libMCAL.a 

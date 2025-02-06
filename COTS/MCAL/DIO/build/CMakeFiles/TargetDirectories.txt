@@ -1,3 +1,0 @@
-/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/build/CMakeFiles/MDIO.dir
-/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/build/CMakeFiles/edit_cache.dir
-/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO/build/CMakeFiles/rebuild_cache.dir

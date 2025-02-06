@@ -136,7 +136,15 @@ void MPORT_vInit(void)
 }
 
 
-
+/**
+ * 
+ * @brief Set the direction of the pin
+ * 
+ * @param Copy_enuPinNum : The pin number
+ * @param Copy_enuPinDirection : The direction of the pin
+ * 
+ * @return MPORT_enuErrorStatus_t : Error status
+ */
 MPORT_enuErrorStatus_t MPORT_enuSetPinDirection( u8 Copy_enuPinNum  ,  u8  Copy_enuPinDirection  )
 {
 	

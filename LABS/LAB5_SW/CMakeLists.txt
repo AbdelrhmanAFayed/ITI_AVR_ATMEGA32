@@ -1,70 +1,63 @@
+cmake_minimum_required(VERSION 3.10)
+project(SwitchLAB C ASM)
 
+# Set path to external COTS
+set(COTS_PATH "../../COTS")  # Change this to the correct path
 
-cmake_minimum_required(VERSION 3.2)
-set(CMAKE_SYSTEM_NAME generic)
+# Include COTS subdirectories (only the ones with their own CMakeLists.txt)
+add_subdirectory(${COTS_PATH}/MCAL ${CMAKE_BINARY_DIR}/MCAL)
+add_subdirectory(${COTS_PATH}/HAL ${CMAKE_BINARY_DIR}/HAL)
 
-# Automatically remove the build directory
-if (CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
-    message(FATAL_ERROR "In-source builds are not allowed. Please use a separate build directory.")
-endif()
+# Set AVR toolchain
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_C_COMPILER "/usr/bin/avr-gcc")
+set(CMAKE_CXX_COMPILER "/usr/bin/avr-g++")
+set(CMAKE_ASM_COMPILER "/usr/bin/avr-gcc")
 
-# Custom command to remove the previous build directory
-if (EXISTS ${CMAKE_BINARY_DIR})
-    file(REMOVE_RECURSE ${CMAKE_BINARY_DIR})
-    message(STATUS "Previous build folder removed: ${CMAKE_BINARY_DIR}")
-endif()
-
-project(LAB5_SW C)
-
+# Target MCU & frequency
 set(MCU atmega32)
-set(F_CPU 8000000UL)  
-set(PROGRAMMER usbasp) 
-set(PORT usb) 
+set(F_CPU 8000000UL)
 
-set(CMAKE_EXE_LINKER_FLAGS "-mmcu=${MCU}")
+# Compiler flags
+add_definitions(-DF_CPU=${F_CPU})
+add_compile_options(-mmcu=${MCU} -Os -Wall -Wextra -ffunction-sections -fdata-sections)
 
-file(GLOB_RECURSE ${PROJECT_NAME}_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c" )
+# Linker flags
+set(CMAKE_EXE_LINKER_FLAGS "-mmcu=${MCU} -Wl,--gc-sections")
 
+file(GLOB MAIN_SOURCES ${PROJECT_SOURCE_DIR}/src/*.c)
 
-message(STATUS "${CMAKE_C_COMPILER}")
-message(STATUS "${${PROJECT_NAME}_SOURCES}")
-
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/MCAL/DIO/ ${CMAKE_BINARY_DIR}/MDIO) 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/MCAL/PORT/ ${CMAKE_BINARY_DIR}/MPORT) 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/HAL/LED/ ${CMAKE_BINARY_DIR}/HLED) 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/HAL/SWITCH/ ${CMAKE_BINARY_DIR}/HSW) 
-
-
-
-set(CMAKE_C_COMPILER avr-gcc)
-set(CMAKE_C_FLAGS "-Os -g -Wall -mmcu=${MCU} -DF_CPU=${F_CPU}")
-
-
-add_executable(${PROJECT_NAME} "${${PROJECT_NAME}_SOURCES}")
-
-
-
-target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/inc"  "${CMAKE_CURRENT_SOURCE_DIR}/../../COTS/common/stdlib"  )
-
-target_link_libraries(${PROJECT_NAME} HLED)
-target_link_libraries(${PROJECT_NAME} HSW)
-
-add_custom_command(OUTPUT ${PROJECT_NAME}.elf
-    COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_NAME} ${PROJECT_NAME}.elf
-    DEPENDS ${PROJECT_NAME}
+# Include directories (make sure this is applied directly to the target)
+include_directories(
+    ${COTS_PATH}/common/stdlib  # For STD_TYPES.h
+    ${COTS_PATH}/HAL/LED/inc
+    ${COTS_PATH}/HAL/SEVENSEG/inc
+    ${COTS_PATH}/HAL/SWITCH/inc
+    ${COTS_PATH}/MCAL/DIO/inc
+    ${COTS_PATH}/MCAL/PORT/inc  # Ensure this is included for MPORT.h
+    ${PROJECT_SOURCE_DIR}/inc  # Main project headers
 )
 
-add_custom_target(${PROJECT_NAME}.hex ALL
-    COMMAND avr-objcopy -O ihex -R .eeprom ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
-    DEPENDS ${PROJECT_NAME}.elf
+# Define the executable
+add_executable(SwitchLAB ${MAIN_SOURCES})
+
+# Ensure include directories are applied to the target
+target_include_directories(SwitchLAB PRIVATE
+    ${COTS_PATH}/common/stdlib
+    ${COTS_PATH}/HAL/LED/inc
+    ${COTS_PATH}/HAL/SEVENSEG/inc
+    ${COTS_PATH}/HAL/SWITCH/inc
+    ${COTS_PATH}/MCAL/DIO/inc
+    ${COTS_PATH}/MCAL/PORT/inc  # Ensure this is included for MPORT.h
+    ${PROJECT_SOURCE_DIR}/inc  # Main project headers
 )
 
-add_custom_target(upload
-    COMMAND avrdude -c ${PROGRAMMER} -p ${MCU} -P ${PORT} -U flash:w:${PROJECT_NAME}.hex
-    DEPENDS ${PROJECT_NAME}.hex
+# Link the libraries for HAL and MCAL to the project
+target_link_libraries(SwitchLAB PUBLIC HAL MCAL)
+
+# Generate HEX file
+add_custom_target(hex
+    COMMAND avr-objcopy -O ihex -R .eeprom SwitchLAB SwitchLAB.hex
+    DEPENDS SwitchLAB
+    COMMENT "Generating HEX file..."
 )
-
-
-
-
-

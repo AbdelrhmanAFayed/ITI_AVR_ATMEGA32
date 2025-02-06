@@ -63,277 +63,156 @@ CMAKE_BINARY_DIR = "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LAB5_SW.dir/all
-all: CMakeFiles/LAB5_SW.hex.dir/all
-all: MDIO/all
-all: MPORT/all
-all: HLED/all
-all: HSW/all
+all: CMakeFiles/SwitchLAB.dir/all
+all: MCAL/all
+all: HAL/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: MDIO/preinstall
-preinstall: MPORT/preinstall
-preinstall: HLED/preinstall
-preinstall: HSW/preinstall
+preinstall: MCAL/preinstall
+preinstall: HAL/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LAB5_SW.dir/clean
-clean: CMakeFiles/LAB5_SW.hex.dir/clean
-clean: CMakeFiles/upload.dir/clean
-clean: MDIO/clean
-clean: MPORT/clean
-clean: HLED/clean
-clean: HSW/clean
+clean: CMakeFiles/SwitchLAB.dir/clean
+clean: CMakeFiles/hex.dir/clean
+clean: MCAL/clean
+clean: HAL/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory HLED
+# Directory level rules for directory HAL
 
 # Recursive "all" directory target.
-HLED/all: HLED/CMakeFiles/HLED.dir/all
-.PHONY : HLED/all
+HAL/all: HAL/CMakeFiles/HAL.dir/all
+.PHONY : HAL/all
 
 # Recursive "preinstall" directory target.
-HLED/preinstall:
-.PHONY : HLED/preinstall
+HAL/preinstall:
+.PHONY : HAL/preinstall
 
 # Recursive "clean" directory target.
-HLED/clean: HLED/CMakeFiles/HLED.dir/clean
-.PHONY : HLED/clean
+HAL/clean: HAL/CMakeFiles/HAL.dir/clean
+.PHONY : HAL/clean
 
 #=============================================================================
-# Directory level rules for directory HSW
+# Directory level rules for directory MCAL
 
 # Recursive "all" directory target.
-HSW/all: HSW/CMakeFiles/HSW.dir/all
-.PHONY : HSW/all
+MCAL/all: MCAL/CMakeFiles/MCAL.dir/all
+.PHONY : MCAL/all
 
 # Recursive "preinstall" directory target.
-HSW/preinstall:
-.PHONY : HSW/preinstall
+MCAL/preinstall:
+.PHONY : MCAL/preinstall
 
 # Recursive "clean" directory target.
-HSW/clean: HSW/CMakeFiles/HSW.dir/clean
-.PHONY : HSW/clean
+MCAL/clean: MCAL/CMakeFiles/MCAL.dir/clean
+.PHONY : MCAL/clean
 
 #=============================================================================
-# Directory level rules for directory MDIO
-
-# Recursive "all" directory target.
-MDIO/all: MDIO/CMakeFiles/MDIO.dir/all
-.PHONY : MDIO/all
-
-# Recursive "preinstall" directory target.
-MDIO/preinstall:
-.PHONY : MDIO/preinstall
-
-# Recursive "clean" directory target.
-MDIO/clean: MDIO/CMakeFiles/MDIO.dir/clean
-.PHONY : MDIO/clean
-
-#=============================================================================
-# Directory level rules for directory MPORT
-
-# Recursive "all" directory target.
-MPORT/all: MPORT/CMakeFiles/MPORT.dir/all
-.PHONY : MPORT/all
-
-# Recursive "preinstall" directory target.
-MPORT/preinstall:
-.PHONY : MPORT/preinstall
-
-# Recursive "clean" directory target.
-MPORT/clean: MPORT/CMakeFiles/MPORT.dir/clean
-.PHONY : MPORT/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/LAB5_SW.dir
+# Target rules for target CMakeFiles/SwitchLAB.dir
 
 # All Build rule for target.
-CMakeFiles/LAB5_SW.dir/all: MDIO/CMakeFiles/MDIO.dir/all
-CMakeFiles/LAB5_SW.dir/all: MPORT/CMakeFiles/MPORT.dir/all
-CMakeFiles/LAB5_SW.dir/all: HLED/CMakeFiles/HLED.dir/all
-CMakeFiles/LAB5_SW.dir/all: HSW/CMakeFiles/HSW.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=7,8 "Built target LAB5_SW"
-.PHONY : CMakeFiles/LAB5_SW.dir/all
+CMakeFiles/SwitchLAB.dir/all: MCAL/CMakeFiles/MCAL.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=13,14 "Built target SwitchLAB"
+.PHONY : CMakeFiles/SwitchLAB.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LAB5_SW.dir/rule: cmake_check_build_system
+CMakeFiles/SwitchLAB.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LAB5_SW.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SwitchLAB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : CMakeFiles/LAB5_SW.dir/rule
+.PHONY : CMakeFiles/SwitchLAB.dir/rule
 
 # Convenience name for target.
-LAB5_SW: CMakeFiles/LAB5_SW.dir/rule
-.PHONY : LAB5_SW
+SwitchLAB: CMakeFiles/SwitchLAB.dir/rule
+.PHONY : SwitchLAB
 
 # clean rule for target.
-CMakeFiles/LAB5_SW.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/clean
-.PHONY : CMakeFiles/LAB5_SW.dir/clean
+CMakeFiles/SwitchLAB.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/clean
+.PHONY : CMakeFiles/SwitchLAB.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LAB5_SW.hex.dir
+# Target rules for target CMakeFiles/hex.dir
 
 # All Build rule for target.
-CMakeFiles/LAB5_SW.hex.dir/all: CMakeFiles/LAB5_SW.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.hex.dir/build.make CMakeFiles/LAB5_SW.hex.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.hex.dir/build.make CMakeFiles/LAB5_SW.hex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=9 "Built target LAB5_SW.hex"
-.PHONY : CMakeFiles/LAB5_SW.hex.dir/all
+CMakeFiles/hex.dir/all: CMakeFiles/SwitchLAB.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=15 "Built target hex"
+.PHONY : CMakeFiles/hex.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LAB5_SW.hex.dir/rule: cmake_check_build_system
+CMakeFiles/hex.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LAB5_SW.hex.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : CMakeFiles/LAB5_SW.hex.dir/rule
+.PHONY : CMakeFiles/hex.dir/rule
 
 # Convenience name for target.
-LAB5_SW.hex: CMakeFiles/LAB5_SW.hex.dir/rule
-.PHONY : LAB5_SW.hex
+hex: CMakeFiles/hex.dir/rule
+.PHONY : hex
 
 # clean rule for target.
-CMakeFiles/LAB5_SW.hex.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.hex.dir/build.make CMakeFiles/LAB5_SW.hex.dir/clean
-.PHONY : CMakeFiles/LAB5_SW.hex.dir/clean
+CMakeFiles/hex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/clean
+.PHONY : CMakeFiles/hex.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/upload.dir
+# Target rules for target MCAL/CMakeFiles/MCAL.dir
 
 # All Build rule for target.
-CMakeFiles/upload.dir/all: CMakeFiles/LAB5_SW.hex.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num= "Built target upload"
-.PHONY : CMakeFiles/upload.dir/all
+MCAL/CMakeFiles/MCAL.dir/all: HAL/CMakeFiles/HAL.dir/all
+	$(MAKE) $(MAKESILENT) -f MCAL/CMakeFiles/MCAL.dir/build.make MCAL/CMakeFiles/MCAL.dir/depend
+	$(MAKE) $(MAKESILENT) -f MCAL/CMakeFiles/MCAL.dir/build.make MCAL/CMakeFiles/MCAL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=8,9,10,11,12 "Built target MCAL"
+.PHONY : MCAL/CMakeFiles/MCAL.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/upload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/upload.dir/all
+MCAL/CMakeFiles/MCAL.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MCAL/CMakeFiles/MCAL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : CMakeFiles/upload.dir/rule
+.PHONY : MCAL/CMakeFiles/MCAL.dir/rule
 
 # Convenience name for target.
-upload: CMakeFiles/upload.dir/rule
-.PHONY : upload
+MCAL: MCAL/CMakeFiles/MCAL.dir/rule
+.PHONY : MCAL
 
 # clean rule for target.
-CMakeFiles/upload.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/clean
-.PHONY : CMakeFiles/upload.dir/clean
+MCAL/CMakeFiles/MCAL.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MCAL/CMakeFiles/MCAL.dir/build.make MCAL/CMakeFiles/MCAL.dir/clean
+.PHONY : MCAL/CMakeFiles/MCAL.dir/clean
 
 #=============================================================================
-# Target rules for target MDIO/CMakeFiles/MDIO.dir
+# Target rules for target HAL/CMakeFiles/HAL.dir
 
 # All Build rule for target.
-MDIO/CMakeFiles/MDIO.dir/all:
-	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/depend
-	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=10,11,12 "Built target MDIO"
-.PHONY : MDIO/CMakeFiles/MDIO.dir/all
+HAL/CMakeFiles/HAL.dir/all:
+	$(MAKE) $(MAKESILENT) -f HAL/CMakeFiles/HAL.dir/build.make HAL/CMakeFiles/HAL.dir/depend
+	$(MAKE) $(MAKESILENT) -f HAL/CMakeFiles/HAL.dir/build.make HAL/CMakeFiles/HAL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target HAL"
+.PHONY : HAL/CMakeFiles/HAL.dir/all
 
 # Build rule for subdir invocation for target.
-MDIO/CMakeFiles/MDIO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO/CMakeFiles/MDIO.dir/all
+HAL/CMakeFiles/HAL.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HAL/CMakeFiles/HAL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : MDIO/CMakeFiles/MDIO.dir/rule
+.PHONY : HAL/CMakeFiles/HAL.dir/rule
 
 # Convenience name for target.
-MDIO: MDIO/CMakeFiles/MDIO.dir/rule
-.PHONY : MDIO
+HAL: HAL/CMakeFiles/HAL.dir/rule
+.PHONY : HAL
 
 # clean rule for target.
-MDIO/CMakeFiles/MDIO.dir/clean:
-	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/clean
-.PHONY : MDIO/CMakeFiles/MDIO.dir/clean
-
-#=============================================================================
-# Target rules for target MPORT/CMakeFiles/MPORT.dir
-
-# All Build rule for target.
-MPORT/CMakeFiles/MPORT.dir/all:
-	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/depend
-	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=13,14,15 "Built target MPORT"
-.PHONY : MPORT/CMakeFiles/MPORT.dir/all
-
-# Build rule for subdir invocation for target.
-MPORT/CMakeFiles/MPORT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MPORT/CMakeFiles/MPORT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : MPORT/CMakeFiles/MPORT.dir/rule
-
-# Convenience name for target.
-MPORT: MPORT/CMakeFiles/MPORT.dir/rule
-.PHONY : MPORT
-
-# clean rule for target.
-MPORT/CMakeFiles/MPORT.dir/clean:
-	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/clean
-.PHONY : MPORT/CMakeFiles/MPORT.dir/clean
-
-#=============================================================================
-# Target rules for target HLED/CMakeFiles/HLED.dir
-
-# All Build rule for target.
-HLED/CMakeFiles/HLED.dir/all: MDIO/CMakeFiles/MDIO.dir/all
-HLED/CMakeFiles/HLED.dir/all: MPORT/CMakeFiles/MPORT.dir/all
-	$(MAKE) $(MAKESILENT) -f HLED/CMakeFiles/HLED.dir/build.make HLED/CMakeFiles/HLED.dir/depend
-	$(MAKE) $(MAKESILENT) -f HLED/CMakeFiles/HLED.dir/build.make HLED/CMakeFiles/HLED.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=1,2,3 "Built target HLED"
-.PHONY : HLED/CMakeFiles/HLED.dir/all
-
-# Build rule for subdir invocation for target.
-HLED/CMakeFiles/HLED.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HLED/CMakeFiles/HLED.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : HLED/CMakeFiles/HLED.dir/rule
-
-# Convenience name for target.
-HLED: HLED/CMakeFiles/HLED.dir/rule
-.PHONY : HLED
-
-# clean rule for target.
-HLED/CMakeFiles/HLED.dir/clean:
-	$(MAKE) $(MAKESILENT) -f HLED/CMakeFiles/HLED.dir/build.make HLED/CMakeFiles/HLED.dir/clean
-.PHONY : HLED/CMakeFiles/HLED.dir/clean
-
-#=============================================================================
-# Target rules for target HSW/CMakeFiles/HSW.dir
-
-# All Build rule for target.
-HSW/CMakeFiles/HSW.dir/all: MDIO/CMakeFiles/MDIO.dir/all
-HSW/CMakeFiles/HSW.dir/all: MPORT/CMakeFiles/MPORT.dir/all
-	$(MAKE) $(MAKESILENT) -f HSW/CMakeFiles/HSW.dir/build.make HSW/CMakeFiles/HSW.dir/depend
-	$(MAKE) $(MAKESILENT) -f HSW/CMakeFiles/HSW.dir/build.make HSW/CMakeFiles/HSW.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" --progress-num=4,5,6 "Built target HSW"
-.PHONY : HSW/CMakeFiles/HSW.dir/all
-
-# Build rule for subdir invocation for target.
-HSW/CMakeFiles/HSW.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HSW/CMakeFiles/HSW.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/CMakeFiles" 0
-.PHONY : HSW/CMakeFiles/HSW.dir/rule
-
-# Convenience name for target.
-HSW: HSW/CMakeFiles/HSW.dir/rule
-.PHONY : HSW
-
-# clean rule for target.
-HSW/CMakeFiles/HSW.dir/clean:
-	$(MAKE) $(MAKESILENT) -f HSW/CMakeFiles/HSW.dir/build.make HSW/CMakeFiles/HSW.dir/clean
-.PHONY : HSW/CMakeFiles/HSW.dir/clean
+HAL/CMakeFiles/HAL.dir/clean:
+	$(MAKE) $(MAKESILENT) -f HAL/CMakeFiles/HAL.dir/build.make HAL/CMakeFiles/HAL.dir/clean
+.PHONY : HAL/CMakeFiles/HAL.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

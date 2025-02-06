@@ -27,33 +27,30 @@ HSW_enuErrorStatus_t HSW_enuGetSwitchState(u8 Copy_u8SwitchName, u8* Add_pu8Stat
     {
     
     MDIO_enuGetPinValue(HSW_strucSWcfg[Copy_u8SwitchName].PortNum, HSW_strucSWcfg[Copy_u8SwitchName].PinNum, Add_pu8State);
-    switch(HSW_strucSWcfg[Copy_u8SwitchName].Connect)
+    if (HSW_strucSWcfg[Copy_u8SwitchName].Connect == HSW_INTERNAL_PULLUP || HSW_strucSWcfg[Copy_u8SwitchName].Connect == HSW_EXTERNAL_PULLUP)
+    {
+        if (*Add_pu8State == 0)
         {
-            case HSW_INTERNAL_PULLUP:
-            case HSW_EXTERNAL_PULLUP:
-                if (*Add_pu8State == 0)
-                {
-                    *Add_pu8State = HSW_PRESSED;
-                }
-                else
-                {
-                    *Add_pu8State = HSW_RELEASED;
-                }
-                break;
-            case HSW_EXTERNAL_PULLDOWN:
-                if (*Add_pu8State == 1)
-                {
-                    *Add_pu8State = HSW_PRESSED;
-                }
-                else
-                {
-                    *Add_pu8State = HSW_RELEASED;
-                }
-                break;
+            *Add_pu8State = HSW_PRESSED;
+        }
+        else
+        {
+            *Add_pu8State = HSW_RELEASED;
+        }
+    }
+    else if (HSW_strucSWcfg[Copy_u8SwitchName].Connect == HSW_EXTERNAL_PULLDOWN)
+    {
+        if (*Add_pu8State == 1)
+        {
+            *Add_pu8State = HSW_PRESSED;
+        }
+        else
+        {
+            *Add_pu8State = HSW_RELEASED;
         }
     }
     return Loc_enu_error;
-
+    }
 }
 
 void HSW_Init(void)
@@ -64,24 +61,21 @@ void HSW_Init(void)
     for(Local_u8LoopIndex = 0; Local_u8LoopIndex < NUM_OF_SWITCHES; Local_u8LoopIndex++)
     {
         Local_u8PortPinNum = ((HSW_strucSWcfg[Local_u8LoopIndex].PortNum * 0x10) + HSW_strucSWcfg[Local_u8LoopIndex].PinNum);
-            MPORT_enuSetPinDirection(Local_u8PortPinNum, MPORT_enuPIN_INPUT);
 
-        switch( HSW_strucSWcfg[Local_u8LoopIndex].Connect )
+        MPORT_enuSetPinDirection(Local_u8PortPinNum, MPORT_enuPIN_INPUT);
+        
+        if (HSW_strucSWcfg[Local_u8LoopIndex].Connect == HSW_INTERNAL_PULLUP)
         {
-            case HSW_INTERNAL_PULLUP:
-                MPORT_enuSetPinMode(Local_u8PortPinNum, MPORT_enuPIN_INPUT_PULLUP);
-                break;
-            case HSW_EXTERNAL_PULLUP:
-                MPORT_enuSetPinMode(Local_u8PortPinNum, MPORT_enuPIN_INPUT);
-                break;
-            case HSW_EXTERNAL_PULLDOWN:
-                MPORT_enuSetPinMode(Local_u8PortPinNum, MPORT_enuPIN_INPUT);
-                break;
-
-            default:
-
-            break;
+            MPORT_enuSetPinMode(Local_u8PortPinNum, MPORT_enuPIN_INPUT_PULLUP);
         }
-    }
+        else if (HSW_strucSWcfg[Local_u8LoopIndex].Connect == HSW_EXTERNAL_PULLUP)
+        {
+            MPORT_enuSetPinMode(Local_u8PortPinNum, MPORT_enuPIN_INPUT);
+        }
+        else if (HSW_strucSWcfg[Local_u8LoopIndex].Connect == HSW_EXTERNAL_PULLDOWN)
+        {
+            MPORT_enuSetPinMode(Local_u8PortPinNum, MPORT_enuPIN_INPUT);
+        }
 
+    }
 }

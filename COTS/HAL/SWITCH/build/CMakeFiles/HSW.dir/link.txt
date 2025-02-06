@@ -1,2 +1,0 @@
-/usr/bin/ar qc libHSW.a CMakeFiles/HSW.dir/src/HSW.c.o CMakeFiles/HSW.dir/src/HSW_LCFG.c.o
-/usr/bin/ranlib libHSW.a

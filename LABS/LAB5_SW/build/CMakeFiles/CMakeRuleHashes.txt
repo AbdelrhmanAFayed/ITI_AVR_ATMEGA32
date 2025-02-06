@@ -1,4 +1,2 @@
 # Hashes of file build rules.
-9346e9a83d3c3b3777db734264d82287 CMakeFiles/LAB5_SW.hex
-9cc65c1846c9bbf39467c79d4f7385ed CMakeFiles/upload
-9469bd5929992eed5bb8930950841622 LAB5_SW.elf
+e7ca6d709711a00ec78e566c5854cd2c CMakeFiles/hex

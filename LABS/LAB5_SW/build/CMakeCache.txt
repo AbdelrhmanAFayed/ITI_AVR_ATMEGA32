@@ -20,6 +20,32 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
+//ASM compiler
+CMAKE_ASM_COMPILER:FILEPATH=/usr/bin/cc
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+
+//Flags used by the ASM compiler during all build types.
+CMAKE_ASM_FLAGS:STRING=
+
+//Flags used by the ASM compiler during DEBUG builds.
+CMAKE_ASM_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the ASM compiler during MINSIZEREL builds.
+CMAKE_ASM_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the ASM compiler during RELEASE builds.
+CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the ASM compiler during RELWITHDEBINFO builds.
+CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
@@ -28,7 +54,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -119,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=LAB5_SW
+CMAKE_PROJECT_NAME:STATIC=SwitchLAB
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -183,56 +209,20 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-HLED_BINARY_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HLED
-
-//Value Computed by CMake
-HLED_IS_TOP_LEVEL:STATIC=OFF
+//Dependencies for the target
+HAL_LIB_DEPENDS:STATIC=general;MCAL;
 
 //Dependencies for the target
-HLED_LIB_DEPENDS:STATIC=general;MDIO;general;MPORT;
+MCAL_LIB_DEPENDS:STATIC=general;HAL;
 
 //Value Computed by CMake
-HLED_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/HAL/LED
+SwitchLAB_BINARY_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build
 
 //Value Computed by CMake
-HSW_BINARY_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/HSW
+SwitchLAB_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-HSW_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-HSW_LIB_DEPENDS:STATIC=general;MDIO;general;MPORT;
-
-//Value Computed by CMake
-HSW_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/HAL/SWITCH
-
-//Value Computed by CMake
-LAB5_SW_BINARY_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build
-
-//Value Computed by CMake
-LAB5_SW_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-LAB5_SW_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW
-
-//Value Computed by CMake
-MDIO_BINARY_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MDIO
-
-//Value Computed by CMake
-MDIO_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-MDIO_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/DIO
-
-//Value Computed by CMake
-MPORT_BINARY_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build/MPORT
-
-//Value Computed by CMake
-MPORT_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-MPORT_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/MCAL/PORT
+SwitchLAB_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW
 
 
 ########################
@@ -243,6 +233,23 @@ MPORT_SOURCE_DIR:STATIC=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/COTS/
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER
+CMAKE_ASM_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_AR
+CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
+CMAKE_ASM_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS
+CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
+CMAKE_ASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_MINSIZEREL
+CMAKE_ASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELEASE
+CMAKE_ASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELWITHDEBINFO
+CMAKE_ASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW/build
 //Major version of cmake used to create the current loaded cache
@@ -304,6 +311,8 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/media/fazloka/Abdelrhman/9 Month/ITI_AVR_ATMEGA32/LABS/LAB5_SW
+//Install .so files without execute permission.
+CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -321,7 +330,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

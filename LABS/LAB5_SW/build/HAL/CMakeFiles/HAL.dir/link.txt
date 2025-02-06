@@ -1,0 +1,2 @@
+/usr/bin/ar qc libHAL.a CMakeFiles/HAL.dir/LED/src/HLED.c.o CMakeFiles/HAL.dir/LED/src/HLED_LCFG.c.o CMakeFiles/HAL.dir/SEVENSEG/src/HSEVENSEG.c.o CMakeFiles/HAL.dir/SEVENSEG/src/HSEVENSEG_LCFG.c.o CMakeFiles/HAL.dir/SWITCH/src/HSW.c.o CMakeFiles/HAL.dir/SWITCH/src/HSW_LCFG.c.o
+/usr/bin/ranlib libHAL.a

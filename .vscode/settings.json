@@ -3,6 +3,9 @@
         "mdio.h": "c",
         "mport.h": "c",
         "hled.h": "c",
-        "delay.h": "c"
+        "delay.h": "c",
+        "hled_lcfg.h": "c",
+        "hsevenseg_lcfg.h": "c",
+        "std_types.h": "c"
     }
 }

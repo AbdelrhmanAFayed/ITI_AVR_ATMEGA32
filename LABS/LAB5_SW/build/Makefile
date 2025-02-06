@@ -117,110 +117,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LAB5_SW
+# Target rules for targets named SwitchLAB
 
 # Build rule for target.
-LAB5_SW: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LAB5_SW
-.PHONY : LAB5_SW
+SwitchLAB: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SwitchLAB
+.PHONY : SwitchLAB
 
 # fast build rule for target.
-LAB5_SW/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/build
-.PHONY : LAB5_SW/fast
+SwitchLAB/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/build
+.PHONY : SwitchLAB/fast
 
 #=============================================================================
-# Target rules for targets named LAB5_SW.hex
+# Target rules for targets named hex
 
 # Build rule for target.
-LAB5_SW.hex: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LAB5_SW.hex
-.PHONY : LAB5_SW.hex
+hex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hex
+.PHONY : hex
 
 # fast build rule for target.
-LAB5_SW.hex/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.hex.dir/build.make CMakeFiles/LAB5_SW.hex.dir/build
-.PHONY : LAB5_SW.hex/fast
+hex/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex.dir/build.make CMakeFiles/hex.dir/build
+.PHONY : hex/fast
 
 #=============================================================================
-# Target rules for targets named upload
+# Target rules for targets named MCAL
 
 # Build rule for target.
-upload: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upload
-.PHONY : upload
+MCAL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MCAL
+.PHONY : MCAL
 
 # fast build rule for target.
-upload/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload.dir/build.make CMakeFiles/upload.dir/build
-.PHONY : upload/fast
+MCAL/fast:
+	$(MAKE) $(MAKESILENT) -f MCAL/CMakeFiles/MCAL.dir/build.make MCAL/CMakeFiles/MCAL.dir/build
+.PHONY : MCAL/fast
 
 #=============================================================================
-# Target rules for targets named MDIO
+# Target rules for targets named HAL
 
 # Build rule for target.
-MDIO: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MDIO
-.PHONY : MDIO
+HAL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HAL
+.PHONY : HAL
 
 # fast build rule for target.
-MDIO/fast:
-	$(MAKE) $(MAKESILENT) -f MDIO/CMakeFiles/MDIO.dir/build.make MDIO/CMakeFiles/MDIO.dir/build
-.PHONY : MDIO/fast
+HAL/fast:
+	$(MAKE) $(MAKESILENT) -f HAL/CMakeFiles/HAL.dir/build.make HAL/CMakeFiles/HAL.dir/build
+.PHONY : HAL/fast
 
-#=============================================================================
-# Target rules for targets named MPORT
-
-# Build rule for target.
-MPORT: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MPORT
-.PHONY : MPORT
-
-# fast build rule for target.
-MPORT/fast:
-	$(MAKE) $(MAKESILENT) -f MPORT/CMakeFiles/MPORT.dir/build.make MPORT/CMakeFiles/MPORT.dir/build
-.PHONY : MPORT/fast
-
-#=============================================================================
-# Target rules for targets named HLED
-
-# Build rule for target.
-HLED: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HLED
-.PHONY : HLED
-
-# fast build rule for target.
-HLED/fast:
-	$(MAKE) $(MAKESILENT) -f HLED/CMakeFiles/HLED.dir/build.make HLED/CMakeFiles/HLED.dir/build
-.PHONY : HLED/fast
-
-#=============================================================================
-# Target rules for targets named HSW
-
-# Build rule for target.
-HSW: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HSW
-.PHONY : HSW
-
-# fast build rule for target.
-HSW/fast:
-	$(MAKE) $(MAKESILENT) -f HSW/CMakeFiles/HSW.dir/build.make HSW/CMakeFiles/HSW.dir/build
-.PHONY : HSW/fast
-
-src/main.obj: src/main.c.obj
-.PHONY : src/main.obj
+src/main.o: src/main.c.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/src/main.c.obj
-.PHONY : src/main.c.obj
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/src/main.c.o
+.PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -228,7 +189,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB5_SW.dir/build.make CMakeFiles/LAB5_SW.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwitchLAB.dir/build.make CMakeFiles/SwitchLAB.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 # Help Target
@@ -239,14 +200,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LAB5_SW.hex"
-	@echo "... upload"
-	@echo "... HLED"
-	@echo "... HSW"
-	@echo "... LAB5_SW"
-	@echo "... MDIO"
-	@echo "... MPORT"
-	@echo "... src/main.obj"
+	@echo "... hex"
+	@echo "... HAL"
+	@echo "... MCAL"
+	@echo "... SwitchLAB"
+	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 .PHONY : help
