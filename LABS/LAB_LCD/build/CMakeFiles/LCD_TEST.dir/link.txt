@@ -1,0 +1,1 @@
+/usr/bin/avr-gcc -mmcu=atmega32 -Wl,--gc-sections -Wl,-Map=final.map CMakeFiles/LCD_TEST.dir/src/main.c.o -o LCD_TEST  HAL/libHAL.a MCAL/libMCAL.a HAL/libHAL.a MCAL/libMCAL.a 

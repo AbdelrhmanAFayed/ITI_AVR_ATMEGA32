@@ -6,6 +6,7 @@
         "delay.h": "c",
         "hled_lcfg.h": "c",
         "hsevenseg_lcfg.h": "c",
-        "std_types.h": "c"
+        "std_types.h": "c",
+        "hlcd_lcfg.h": "c"
     }
 }

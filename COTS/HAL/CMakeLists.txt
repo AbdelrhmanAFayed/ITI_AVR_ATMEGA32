@@ -21,5 +21,6 @@ target_include_directories(HAL PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/LED/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/SEVENSEG/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/SWITCH/inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/LCD/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../common/stdlib
 )

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMCAL.a CMakeFiles/MCAL.dir/DIO/src/MDIO.c.o CMakeFiles/MCAL.dir/DIO/src/MDIO_LCFG.c.o CMakeFiles/MCAL.dir/PORT/src/MPORT.c.o CMakeFiles/MCAL.dir/PORT/src/MPORT_LCFG.c.o
+/usr/bin/ranlib libMCAL.a
